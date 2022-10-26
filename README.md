@@ -15,9 +15,10 @@ In the end, I decided to build my clock on the cheap. You see the result below w
 ## Configuration
 
 - Wireless
-The board can connect to a wireless network to sync the time and data we need for the clock.
+ The board can connect to a wireless network to sync the time and data we need for the clock.
 
-- 
+- Screen refresh
+ Currently, the on-screen data is being refreshed at predefined intervals in "// Loop" part. This means that the time on the screen may be a bit off.
 
 ## To-Do
 - [ ] Use better display positioning for the text
