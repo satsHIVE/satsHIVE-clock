@@ -9,10 +9,12 @@ In the end, I decided to build my clock on the cheap. You see the result below w
 
 ## Required hardware
 
-* Display/Controller: LILYGO® TTGO T-Display ESP32
+* Display/Controller: [LILYGO® TTGO T-Display ESP32](https://www.aliexpress.com/item/33048962331.html)
 * Battery: QL902030 3.7v (or other alternative)
 
 ## Configuration
+
+- Arduino IDE - You should use TTGO LoRa32-OLED V1 as a board in the IDE. The T-Display don't have it's own record yet.
 
 - Wireless - The board can connect to a wireless network to sync the time and data we need for the clock.
 
@@ -25,4 +27,4 @@ In the end, I decided to build my clock on the cheap. You see the result below w
 - [ ] Add block height info to the display
 - [ ] Switch screens with the buttons (still not sure if possible at all)
 
-** All feedback and suggestions are welcome. ** You could either comment here or reach out to me on Twitter or Telegram.
+**All feedback and suggestions are welcome.** You could either comment here or reach out to me on [Twitter](https://twitter.com/satsHIVE) or [Telegram](https://t.me/satsHIVE).
