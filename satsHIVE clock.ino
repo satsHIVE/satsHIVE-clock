@@ -18,7 +18,7 @@ const char* ssid       = "XXX"; // Wireless Network name
 const char* password   = "XXX"; // Wireless Network password
 
 const char* ntpServer = "pool.ntp.org";
-const long  gmtOffset_sec = 0; // Set to your time zone offset. 0 is used for UTC
+const long  gmtOffset_sec = 0; // Set to your time zone offset in seconds. 0 is used for UTC
 const int   daylightOffset_sec = 0; // If you are on daylight saving
 
 float prices[2];
