@@ -39,7 +39,10 @@ void setup(void) {
 
   Serial.begin(115200);
 
+}
 // Connect to WiFi
+
+void connectToWiFi() {
 
   Serial.printf("Connecting to %s ", ssid);
   WiFi.begin(ssid, password);
@@ -54,6 +57,13 @@ void setup(void) {
 
 //  WiFi.disconnect(true);
 //  WiFi.mode(WIFI_OFF);
+
+}
+
+void disconnectFromWiFi() {
+
+  WiFi.disconnect(true);
+  WiFi.mode(WIFI_OFF);
 
 }
 
@@ -132,5 +142,7 @@ void printOnScreen()
 
 void loop() {
 delay(60000); //refresh rate in miliseconds
+connectToWiFi();
 printOnScreen();
+disconnectFromWiFi();
 }

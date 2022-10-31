@@ -22,7 +22,7 @@ In the end, I decided to build my clock on the cheap. You see the result below w
 
 ## To-Do
 - [ ] Use better display positioning for the text
-- [ ] Connect and Disconnect Wi-Fi only to update readings to preserve battery life
+- [x] Connect and Disconnect Wi-Fi only to update readings to preserve battery life
 - [ ] Find a better source for reading data from (currently Binance)
 - [ ] Add block height info to the display
 - [ ] Switch screens with the buttons (still not sure if possible at all)
