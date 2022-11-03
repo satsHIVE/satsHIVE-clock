@@ -16,6 +16,8 @@ In the end, I decided to build my clock on the cheap. You see the result below w
 
 - Arduino IDE - You should use TTGO LoRa32-OLED V1 as a board in the IDE. The T-Display don't have it's own record yet.
 
+- [ESP32 v 1.0.6](https://dl.espressif.com/dl/package_esp32_index.json) - I was only able to use the board with this specific version of the library. 
+
 - Wireless - The board can connect to a wireless network to sync the time and data we need for the clock.
 
 - Screen refresh - Currently, the on-screen data is being refreshed at predefined intervals in "// Loop" part. This means that the time on the screen may be a bit off.

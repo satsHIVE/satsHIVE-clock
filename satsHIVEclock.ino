@@ -55,9 +55,6 @@ void connectToWiFi() {
   configTime(gmtOffset_sec, daylightOffset_sec, ntpServer);
   printOnScreen();
 
-//  WiFi.disconnect(true);
-//  WiFi.mode(WIFI_OFF);
-
 }
 
 void disconnectFromWiFi() {
@@ -96,7 +93,6 @@ void printOnScreen()
       prices[1] = jsonBuffer["priceChangePercent"];
       http.end();
 
-      //String BTCprice = "BTC price (" + currency[0] + "): " + String(prices[0]);
       String BTCprice = "$" + String(prices[0]);
       String BTCchange = String(prices[1]) + "%";
       String MoscowTime = String(mt[1]);
@@ -113,10 +109,10 @@ void printOnScreen()
   tft.setTextSize(1);
   tft.println(&timeinfo,"%a, %d %b. %Y");
 
-  tft.setCursor(200, 120, 2);
+  tft.setCursor(190, 120, 2);
   tft.setTextColor(TFT_WHITE,TFT_BLACK);
   tft.setTextSize(1);
-  tft.println(&timeinfo,"%H:%M");
+  tft.println(&timeinfo,"@ %H:%M");
 
   tft.drawString(BTCprice, 0, 100, 2);
     if(prices[1] >= 0)
@@ -141,7 +137,7 @@ void printOnScreen()
 // Loop
 
 void loop() {
-delay(60000); //refresh rate in miliseconds
+delay(300000); //refresh rate in miliseconds
 connectToWiFi();
 printOnScreen();
 disconnectFromWiFi();
