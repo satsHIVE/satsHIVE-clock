@@ -109,7 +109,7 @@ void printOnScreen()
   tft.setTextSize(1);
   tft.println(&timeinfo,"%a, %d %b. %Y");
 
-  tft.setCursor(190, 120, 2);
+  tft.setCursor(185, 120, 2);
   tft.setTextColor(TFT_WHITE,TFT_BLACK);
   tft.setTextSize(1);
   tft.println(&timeinfo,"@ %H:%M");
